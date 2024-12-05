@@ -1,46 +1,132 @@
+/* Reset básico para remover margens e paddings padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    margin: 0;
-    padding: 0;
-    background: #f4f4f4;
+    background-color: #f4f4f4;
     color: #333;
 }
 
+/* Estilo do cabeçalho */
 header {
-    background: #0073e6;
+    background: #d32f2f;
     color: #fff;
-    padding: 20px;
+    padding: 40px;
     text-align: center;
 }
 
+.header-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.ebook-cover {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+/* Estilo para as seções principais */
+main {
+    padding: 20px;
+}
+
+.intro, .benefits, .consultancy, .cta, .testimonials {
+    background: #fff;
+    padding: 30px;
+    margin: 20px auto;
+    max-width: 800px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.price-discount {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.original-price {
+    text-decoration: line-through;
+    font-size: 1.2em;
+    color: #888;
+}
+
+.discount-price {
+    font-size: 2em;
+    color: #d32f2f;
+    font-weight: bold;
+}
+
+.refund-policy {
+    font-size: 1em;
+    color: #333;
+    margin-top: 10px;
+}
+
+ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+/* Estilo para o botão */
 .button {
     display: inline-block;
     background: #28a745;
     color: #fff;
-    padding: 10px 20px;
+    padding: 15px 30px;
     text-decoration: none;
     border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s ease;
 }
 
 .button:hover {
     background: #218838;
 }
 
-main {
-    padding: 20px;
-}
-
-.intro, .benefits, .cta {
+/* Estilo dos depoimentos */
+.testimonial {
+    background: #fafafa;
+    padding: 15px;
     margin-bottom: 20px;
+    border-left: 5px solid #d32f2f;
+    border-radius: 5px;
 }
 
+.testimonial span {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #555;
+}
+
+/* Estilo do rodapé */
 footer {
     background: #333;
     color: #fff;
     text-align: center;
-    padding: 10px 0;
-    position: fixed;
+    padding: 20px 0;
+    position: relative;
     width: 100%;
-    bottom: 0;
+    margin-top: 20px;
+}
+
+.footer-content a {
+    color: #d32f2f;
+    text-decoration: none;
+}
+
+.footer-content a:hover {
+    text-decoration: underline;
 }
