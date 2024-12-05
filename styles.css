@@ -6,7 +6,7 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Montserrat', sans-serif;
     line-height: 1.6;
     background-color: #f4f4f4;
     color: #333;
@@ -14,9 +14,9 @@ body {
 
 /* Estilo do cabeçalho */
 header {
-    background: #d32f2f;
+    background: linear-gradient(to right, #d32f2f, #b71c1c);
     color: #fff;
-    padding: 40px;
+    padding: 60px 20px;
     text-align: center;
 }
 
@@ -30,6 +30,23 @@ header {
     height: auto;
     margin-top: 20px;
     border-radius: 10px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+.primary-button {
+    display: inline-block;
+    background: #ffc107;
+    color: #333;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 20px;
+    transition: background 0.3s ease;
+}
+
+.primary-button:hover {
+    background: #ffa000;
 }
 
 /* Estilo para as seções principais */
@@ -41,9 +58,9 @@ main {
     background: #fff;
     padding: 30px;
     margin: 20px auto;
-    max-width: 800px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    max-width: 1000px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .price-discount {
@@ -69,13 +86,33 @@ main {
     margin-top: 10px;
 }
 
-ul {
-    list-style-type: disc;
-    margin-left: 20px;
-    margin-top: 10px;
+.benefit-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
 }
 
-li {
+.benefit-item {
+    flex: 1;
+    min-width: 280px;
+    max-width: 300px;
+    text-align: center;
+    background: #fafafa;
+    padding: 20px;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.benefit-item:hover {
+    transform: translateY(-10px);
+}
+
+.benefit-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
     margin-bottom: 10px;
 }
 
@@ -95,13 +132,46 @@ li {
     background: #218838;
 }
 
+/* Estilo da seção de Consultoria */
+.consultancy {
+    text-align: center;
+}
+
+.consultancy-image {
+    max-width: 80%;
+    height: auto;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Estilo da seção de chamada (CTA) */
+.cta-content {
+    text-align: center;
+    padding: 40px;
+}
+
 /* Estilo dos depoimentos */
+.testimonials {
+    text-align: center;
+}
+
+.testimonial-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
 .testimonial {
+    flex: 1;
+    min-width: 280px;
+    max-width: 300px;
     background: #fafafa;
-    padding: 15px;
-    margin-bottom: 20px;
-    border-left: 5px solid #d32f2f;
-    border-radius: 5px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .testimonial span {
@@ -123,7 +193,7 @@ footer {
 }
 
 .footer-content a {
-    color: #d32f2f;
+    color: #ffc107;
     text-decoration: none;
 }
 
