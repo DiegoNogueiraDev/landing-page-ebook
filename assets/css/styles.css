@@ -170,7 +170,7 @@ header svg {
 
 /* CTA Section */
 #cta {
-    background: #d32f2f;
+    background: #b71c1c;
     color: #fff;
     padding: 50px 20px;
     text-align: center;
@@ -190,17 +190,64 @@ header svg {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 
-.promo-timer {
-    margin-top: 20px;
-    padding: 10px 20px;
-    background: #fff;
-    color: #d32f2f;
-    font-size: 1.2rem;
-    font-weight: bold;
+/* Estilo da Seção de Temporizador de Promoção */
+
+#promo-timer {
+    background-color: #dc3444; /* Cor de fundo similar ao Hero, tom de vermelho escuro */
+    color: #ffffff; /* Cor do texto para destaque sobre o fundo escuro */
+    padding: 40px 0;
     border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    text-align: center;
+    margin-top: 30px; /* Um pequeno espaçamento para separação com outras seções */
 }
+
+#promo-timer p {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.timer-display {
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 15px;
+    background-color: #ffffff; /* Fundo branco para destacar o timer */
+    color: #b71c1c; /* Cor vermelha para harmonizar com o Hero */
+    border-radius: 10px;
+    display: inline-block;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+#timer:empty {
+    display: none;
+}
+
+#timer {
+    background: transparent !important;  /* Remove qualquer fundo indesejado */
+    border: none;                        /* Remove bordas */
+    padding: 0;                          /* Remove padding */
+    margin: 0 auto;                      /* Centraliza e evita margens desnecessárias */
+    color: #fff;                         /* Cor do texto para harmonizar com o tema */
+    font-size: 1.5rem;                   /* Ajuste o tamanho da fonte para se destacar */
+}
+
+.btn-warning {
+    background-color: #ffeb3b; /* Botão com tom amarelado festivo */
+    color: #b71c1c; /* Texto em vermelho para contraste */
+    font-weight: bold;
+    border: none;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.btn-warning:hover {
+    background-color: #fdd835; /* Tom amarelado um pouco mais escuro para efeito hover */
+    transform: scale(1.05); /* Um leve aumento para destacar a ação */
+    color: #ffffff; /* Cor branca no texto ao passar o mouse */
+}
+
+.shadow {
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* Sombra para dar destaque ao botão */
+}
+
 
 /* Footer */
 /* Estilo do Footer */
@@ -296,78 +343,123 @@ footer {
     transform: scale(1.05);
 }
 
-/* Ajustes adicionais para remover o fundo cinza */
+/* Estilo Personalizado para o Carrossel */
 .carousel-item-custom {
-    background: transparent !important; /* Fundo transparente garantido */
-    box-shadow: none !important; /* Remover qualquer sombra */
-    border: none !important; /* Remover qualquer borda */
-    color: #333; /* Ajuste a cor do texto para garantir a legibilidade */
+    transition: transform 1s ease-in-out !important; /* Suavizando a transição */
 }
 
-.carousel-custom {
-    background: none !important; /* Sem fundo na área do carrossel */
+/* Estilo do bloco de citação */
+.carousel-item-custom .blockquote {
+    background-color: rgba(255, 255, 255, 0.9) !important; /* Fundo levemente opaco para destaque */
+    padding: 20px !important;
+    border-radius: 10px !important;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1) !important;
+    font-style: italic !important;
+    color: #333 !important;
+    border: none !important; /* Remover qualquer borda que possa estar causando o fundo escuro */
 }
 
-blockquote {
-    background: none !important; /* Sem fundo para as citações */
-    color: #333 !important; /* Garantir uma cor de texto clara */
-}
-
-.blockquote-footer {
-    color: #b71c1c !important; /* Vermelho suave */
-    background: none !important; /* Garantir fundo transparente */
-}
-
-/* Estilo do Carrossel */
-.carousel-item-custom {
-    background: transparent !important; /* Fundo transparente para eliminar o cinza */
-    box-shadow: none !important; /* Sem sombra para manter a simplicidade */
-    border: none !important; /* Sem bordas */
-    color: #333 !important; /* Texto claro e legível */
-    transition: transform 0.5s ease-in-out !important; /* Animação suave ao trocar de depoimento */
-}
-
-.carousel-inner {
-    padding: 20px 0 !important; /* Espaçamento superior e inferior */
-}
-
-blockquote {
-    background: none !important; /* Garantindo fundo transparente */
-    color: #333 !important; /* Cor do texto */
-    font-style: italic; /* Estilo mais sofisticado */
-    padding: 10px !important; /* Suavizando o bloco de citação */
-}
-
-.blockquote-footer {
-    color: #b71c1c !important; /* Cor vermelha suave para destaque */
-    font-weight: bold !important; /* Deixando o nome em destaque */
-    text-align: right; /* Alinhamento à direita para diferenciação */
-}
-
-/* Estilo dos Controles do Carrossel */
+/* Controle de navegação do carrossel */
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
-    background-color: #b71c1c !important; /* Cor vermelha suave */
-    border-radius: 50% !important; /* Tornar os controles redondos */
-    padding: 15px !important; /* Aumentar o tamanho do controle */
+    background-color: #ff2222 !important; /* Um vermelho festivo */
+    padding: 10px !important;
+    border-radius: 50% !important;
+    transition: background-color 0.3s ease-in-out !important;
 }
 
+/* Controle de navegação ao passar o mouse */
 .carousel-control-prev-icon:hover,
 .carousel-control-next-icon:hover {
-    background-color: #d32f2f !important; /* Mudar a cor ao passar o mouse */
+    background-color: #ff2222 !important; /* Escurecendo ao passar o mouse */
 }
 
+/* Aplicando sombra aos botões de navegação */
 .carousel-control-prev,
 .carousel-control-next {
-    filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.2)) !important; /* Sombras para destaque */
+    filter: drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.3)) !important;
 }
 
-/* Controles do Carrossel - Ajustes de Responsividade */
-@media (max-width: 768px) {
-    .carousel-control-prev-icon,
-    .carousel-control-next-icon {
-        padding: 10px !important; /* Ajustar o padding para telas menores */
-    }
+/* Estilo do footer do bloco de citação */
+.carousel-item-custom .blockquote-footer {
+    color: #ff2222 !important; /* Cor personalizada para o nome do autor */
+    font-weight: bold !important;
+    background-color: transparent !important; /* Garantir que o fundo seja transparente */
 }
 
 
+
+.whatsapp-link {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+.whatsapp-link img {
+    width: 100px;  /* Tamanho ajustável */
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.whatsapp-link img:hover {
+    transform: scale(1.1);
+}
+
+
+.social-links a {
+    margin: 0 10px;
+    display: inline-block;
+}
+
+.social-links img {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s;
+}
+
+.social-links img:hover {
+    transform: scale(1.1);
+}
+
+.map-wrapper {
+    border: 2px solid #388e3c; /* Cor do verde para combinar com a paleta */
+    border-radius: 15px; /* Bordas arredondadas para um visual mais moderno */
+    overflow: hidden; /* Garante que o iframe respeite as bordas */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Sombra suave para destacar o mapa */
+}
+
+.faq-section {
+    background-color: #e8f5e9; /* Verde claro suave para destacar a seção */
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.bg-light-red {
+    background-color: #f8d7da;  /* Vermelho claro suave, similar ao feedback de erro */
+    color: #842029;             /* Texto vermelho escuro para contraste */
+}
+
+
+.accordion-header button {
+    font-weight: bold;
+    background-color: #ffffff;
+    border: 1px solid #f1b5b1; /* Cor para combinar com o tema */
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.accordion-button::after {
+    filter: invert(40%) sepia(30%) saturate(500%) hue-rotate(90deg) brightness(100%);
+}
+
+.accordion-button:hover {
+    background-color: #f1f8e9; /* Cor mais suave ao passar o mouse */
+}
+
+.accordion-body {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 0 0 10px 10px; /* Borda arredondada na parte inferior */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Sombra leve */
+}
