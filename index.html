@@ -6,6 +6,14 @@
     <meta name="description" content="Receitas rápidas, práticas e saudáveis para o Natal. Garanta agora seu e-book exclusivo com consultoria gratuita da Dra. Beatriz Neves Bruniera!">
     <meta name="keywords" content="receitas natalinas, e-book, natal, receitas rápidas, receitas saudáveis, consultoria gratuita">
     <meta name="author" content="Dra. Beatriz Neves Bruniera">
+    <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="assets/images/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" href="assets/images/favicon-48x48.png" sizes="48x48">
+    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
     <title>E-book de Receitas Natalinas</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
@@ -19,7 +27,7 @@
             <div class="row align-items-center">
                 <div class="col-md-6 text-md-start">
                     <h1 class="display-4">Receitas Natalinas Incríveis</h1>
-                    <p class="lead">Transforme seu Natal com receitas rápidas, práticas e saudáveis.</p>
+                    <p class="lead">Deixe seu Natal mais saboroso e saudável!</p>
                     <a href="#cta" class="btn btn-warning btn-lg mt-3">Descubra Agora</a>
                 </div>
                 <div class="col-md-6">
@@ -36,23 +44,23 @@
             <div class="row g-4">
                 <div class="col-md-4">
                     <div class="benefit-item bg-white p-3 shadow text-center rounded">
-                        <img src="assets/images/receitas-rapidas.png" alt="Receitas Rápidas" class="img-fluid mb-3">
+                        <img src="assets/images/receitas-natalinas.png" alt="Receitas Rápidas" class="img-fluid mb-3">
                         <h3>Receitas Rápidas</h3>
-                        <p>Prepare pratos incríveis em poucos minutos.</p>
+                        <p>Prepare pratos deliciosos em minutos e surpreenda seus convidados neste Natal!</p>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="benefit-item bg-white p-3 shadow text-center rounded">
                         <img src="assets/images/receitas-saudaveis.png" alt="Receitas Saudáveis" class="img-fluid mb-3">
                         <h3>Receitas Saudáveis</h3>
-                        <p>Ingredientes que equilibram sabor e saúde.</p>
+                        <p>Ingredientes saudáveis que trazem sabor e equilíbrio à sua ceia de Natal!</p>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="benefit-item bg-white p-3 shadow text-center rounded">
                         <img src="assets/images/consultoria-exclusiva.png" alt="Consultoria Exclusiva" class="img-fluid mb-3">
                         <h3>Consultoria Exclusiva</h3>
-                        <p>Receba dicas diretamente da Dra. Beatriz em seu Whatsapp.</p>
+                        <p>Receba dicas personalizadas da Dra. Beatriz e brilhe neste Natal com uma ceia inesquecível!</p>
                     </div>
                 </div>
             </div>
@@ -80,19 +88,88 @@
             <h2 class="text-center mb-5">Sobre a Dra. Beatriz Neves Bruniera</h2>
             <div class="row align-items-center">
                 <div class="col-md-4 text-center">
-                    <img src="assets/images/author-profile.png" alt="Dra. Beatriz" class="img-fluid rounded-circle shadow">
+                    <div class="author-image">
+                        <img src="assets/images/author-profile.png" alt="Dra. Beatriz" class="img-fluid rounded-circle shadow author-frame">
+                    </div>
                 </div>
                 <div class="col-md-8">
-                    <p>Doutora em Ciências da Saúde pela Universidade Estadual de Londrina (UEL), a Dra. Beatriz possui ampla experiência em pesquisa científica e ensino superior. Durante sua trajetória acadêmica e profissional, ela se especializou nas áreas de alimentação saudável, neurociência entérica e diagnóstico molecular.</p>
-                    <p>Com dedicação e paixão pela ciência, a Dra. Beatriz também atua como docente no curso de Farmácia, orientando alunos e desenvolvendo projetos de pesquisa e extensão que impactam diretamente na qualidade de vida das pessoas.</p>
+                    <ul class="author-highlights">
+                        <li>🎓 Doutora em Ciências da Saúde pela Universidade Estadual de Londrina.</li>
+                        <li>📚 Especialista em neurociência entérica e alimentação saudável.</li>
+                        <li>🧑‍🏫 Professora e orientadora no curso de Farmácia, inspirando futuros profissionais.</li>
+                    </ul>
+                    <p>Com dedicação e paixão pela ciência, a Dra. Beatriz também atua como docente e desenvolve projetos de pesquisa e extensão que impactam diretamente a qualidade de vida das pessoas.</p>
                 </div>
             </div>
         </div>
     </section>
-
+    
+    <div id="promo-timer" class="promo-timer">
+        <p class="mb-2">Restam apenas algumas horas para garantir sua ceia perfeita!</p>
+        <div id="timer" class="timer-display"></div>
+        <a href="https://chk.eduzz.com/8WPDG27NWP" class="btn btn-success btn-lg mt-3">Comprar por apenas R$9,90 agora!</a>
+    </div>  
+       
+    <section id="depoimentos" class="py-5 bg-light text-center">
+        <div class="container">
+            <h2 class="mb-5">O que nossos clientes dizem</h2>
+            <div id="carouselDepoimentos" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
+                <div class="carousel-inner">
+                    <!-- Depoimento 1 -->
+                    <div class="carousel-item active carousel-item-custom">
+                        <blockquote class="blockquote">
+                            <p>"Graças a este e-book, minha ceia de Natal foi um sucesso! Receitas fáceis e deliciosas!"</p>
+                            <footer class="blockquote-footer">Maria Silva</footer>
+                        </blockquote>
+                    </div>
+                    <!-- Depoimento 2 -->
+                    <div class="carousel-item carousel-item-custom">
+                        <blockquote class="blockquote">
+                            <p>"As dicas da Dra. Beatriz me ajudaram muito a manter minha alimentação equilibrada neste Natal."</p>
+                            <footer class="blockquote-footer">João Souza</footer>
+                        </blockquote>
+                    </div>
+                    <!-- Continue adicionando os outros depoimentos aqui -->
+                </div>
+        
+                <!-- Controles do Carrossel -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselDepoimentos" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon rounded-circle bg-danger" aria-hidden="true"></span>
+                    <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselDepoimentos" data-bs-slide="next">
+                    <span class="carousel-control-next-icon rounded-circle bg-danger" aria-hidden="true"></span>
+                    <span class="visually-hidden">Próximo</span>
+                </button>
+            </div>
+        </div>
+    </section>
+        
+    
     <!-- Footer -->
-    <footer class="bg-dark text-white text-center py-3">
-        <p>&copy; 2024 - Todos os direitos reservados. Feito com ❤️ por Beatriz Bruniera.</p>
+    <footer class="bg-dark text-white text-center py-4">
+        <div class="container">
+            <div class="footer-section">
+                <p>&copy; 2024 - Todos os direitos reservados. Feito com ❤️ por Beatriz Bruniera.</p>
+            </div>
+            <div class="footer-section">
+                <p>CNPJ: 55.610.400/0001-00</p>
+            </div>
+            <div class="footer-section">
+                <ul class="footer-links list-unstyled">
+                    <li><a href="privacy-page.html">Política de Privacidade</a></li>
+                    <li><a href="use-terms-page.html">Termos de Uso</a></li>
+                    <li><a href="contact-page.html">Contato</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <img src="assets/images/compra-segura.png" alt="Compra 100% Segura" class="img-fluid">
+            </div>
+            <div class="footer-section">
+                <img src="assets/images/garantia-satisfacao.png" alt="Garantia de Satisfação" class="img-fluid">
+            </div>
+        </div>
     </footer>
+    
 </body>
 </html>

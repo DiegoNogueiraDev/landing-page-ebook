@@ -81,10 +81,10 @@ header svg {
 }
 
 .benefit-item img {
-    max-width: 80%; /* Ajusta o tamanho da imagem */
+    max-width: 70%; /* Ajusta o tamanho da imagem */
     height: auto;
     margin-bottom: 20px;
-    border-radius: 5px; /* Suaviza os cantos da imagem */
+    border-radius: 10px; /* Suaviza os cantos da imagem */
 }
 
 .benefit-item h3 {
@@ -140,6 +140,34 @@ header svg {
     margin-bottom: 15px;
 }
 
+.author-highlights {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+.author-highlights li {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.author-frame {
+    border: 5px solid #d32f2f; /* Cor vermelha natalina */
+    padding: 10px;
+    position: relative;
+}
+
+.author-frame:after {
+    content: url('assets/images/santa-hat.png'); /* Imagem de um chapéu de Papai Noel */
+    position: absolute;
+    top: -20px;
+    right: -10px;
+    width: 50px; /* Ajuste o tamanho conforme necessário */
+}
+
+
 /* CTA Section */
 #cta {
     background: #d32f2f;
@@ -171,15 +199,55 @@ header svg {
     font-weight: bold;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
 }
 
 /* Footer */
+/* Estilo do Footer */
 footer {
-    background: #333;
+    background-color: #333;
     color: #fff;
-    text-align: center;
-    padding: 20px;
-    font-size: 0.9rem;
+    padding: 40px 0;
+}
+
+.footer-section {
+    margin-bottom: 20px; /* Espaçamento entre cada seção do footer */
+}
+
+.footer-section:last-child {
+    margin-bottom: 0; /* Remove o espaço inferior da última seção */
+}
+
+.footer-links {
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links li {
+    margin: 5px 0; /* Espaçamento vertical entre os links */
+}
+
+.footer-links a {
+    color: #fcfcfc; /* Vermelho suave para os links */
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    text-decoration: underline; /* Destaque ao passar o mouse */
+}
+
+/* Ajustes de imagem no footer */
+.footer-section img {
+    max-width: 200px; /* Limitar a largura das imagens */
+    margin: 0 auto;
+    display: block; /* Centralizar a imagem */
+}
+
+/* Responsividade */
+@media (min-width: 768px) {
+    .footer-section {
+        margin-bottom: 30px; /* Aumentar o espaço para telas maiores */
+    }
 }
 
 /* Snow Effect */
@@ -202,4 +270,104 @@ footer {
         transform: translateY(100vh);
     }
 }
+
+.btn-warning {
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+}
+
+.btn-success {
+    background-color: #4caf50; /* Verde chamativo */
+    border: none;
+    padding: 15px 30px;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.btn-success:hover {
+    background-color: #388e3c;
+    transform: scale(1.05);
+}
+
+/* Ajustes adicionais para remover o fundo cinza */
+.carousel-item-custom {
+    background: transparent !important; /* Fundo transparente garantido */
+    box-shadow: none !important; /* Remover qualquer sombra */
+    border: none !important; /* Remover qualquer borda */
+    color: #333; /* Ajuste a cor do texto para garantir a legibilidade */
+}
+
+.carousel-custom {
+    background: none !important; /* Sem fundo na área do carrossel */
+}
+
+blockquote {
+    background: none !important; /* Sem fundo para as citações */
+    color: #333 !important; /* Garantir uma cor de texto clara */
+}
+
+.blockquote-footer {
+    color: #b71c1c !important; /* Vermelho suave */
+    background: none !important; /* Garantir fundo transparente */
+}
+
+/* Estilo do Carrossel */
+.carousel-item-custom {
+    background: transparent !important; /* Fundo transparente para eliminar o cinza */
+    box-shadow: none !important; /* Sem sombra para manter a simplicidade */
+    border: none !important; /* Sem bordas */
+    color: #333 !important; /* Texto claro e legível */
+    transition: transform 0.5s ease-in-out !important; /* Animação suave ao trocar de depoimento */
+}
+
+.carousel-inner {
+    padding: 20px 0 !important; /* Espaçamento superior e inferior */
+}
+
+blockquote {
+    background: none !important; /* Garantindo fundo transparente */
+    color: #333 !important; /* Cor do texto */
+    font-style: italic; /* Estilo mais sofisticado */
+    padding: 10px !important; /* Suavizando o bloco de citação */
+}
+
+.blockquote-footer {
+    color: #b71c1c !important; /* Cor vermelha suave para destaque */
+    font-weight: bold !important; /* Deixando o nome em destaque */
+    text-align: right; /* Alinhamento à direita para diferenciação */
+}
+
+/* Estilo dos Controles do Carrossel */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: #b71c1c !important; /* Cor vermelha suave */
+    border-radius: 50% !important; /* Tornar os controles redondos */
+    padding: 15px !important; /* Aumentar o tamanho do controle */
+}
+
+.carousel-control-prev-icon:hover,
+.carousel-control-next-icon:hover {
+    background-color: #d32f2f !important; /* Mudar a cor ao passar o mouse */
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.2)) !important; /* Sombras para destaque */
+}
+
+/* Controles do Carrossel - Ajustes de Responsividade */
+@media (max-width: 768px) {
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+        padding: 10px !important; /* Ajustar o padding para telas menores */
+    }
+}
+
 

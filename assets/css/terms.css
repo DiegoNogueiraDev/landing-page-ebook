@@ -1,0 +1,33 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #ffffff;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #282c34; /* Cinza mais escuro */
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+h2 {
+    color: #b71c1c; /* Vermelho escuro */
+    margin-top: 20px;
+}
+
+main {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    border-left: 4px solid #b71c1c; /* Destacar o conteúdo com uma borda */
+}
+
+footer {
+    background-color: #282c34;
+    color: #fff;
+    padding: 15px;
+    font-size: 0.9rem;
+    text-align: center;
+}

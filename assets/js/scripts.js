@@ -20,27 +20,26 @@ document.addEventListener('DOMContentLoaded', () => {
     setInterval(createSnowflake, 150);
 });
 
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', function () {
+    const endTime = new Date(new Date().getTime() + 60 * 60 * 1000); // Contagem regressiva de 1 hora
     const timerElement = document.getElementById('timer');
-    const endTime = new Date().getTime() + 3600 * 1000; // 1 hora a partir de agora
 
-    const updateTimer = () => {
+    function updateTimer() {
         const now = new Date().getTime();
         const distance = endTime - now;
-
-        if (distance <= 0) {
-            timerElement.innerHTML = "Promoção encerrada!";
-            clearInterval(interval);
-            return;
-        }
 
         const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
         const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
         const seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-        timerElement.innerHTML = `${hours}h ${minutes}m ${seconds}s`;
-    };
+        timerElement.innerHTML = `${hours}:${minutes}:${seconds}`;
 
-    const interval = setInterval(updateTimer, 1000);
-    updateTimer(); // Atualiza imediatamente ao carregar a página
+        if (distance < 0) {
+            clearInterval(timerInterval);
+            timerElement.innerHTML = "Oferta Expirada!";
+        }
+    }
+
+    updateTimer();
+    const timerInterval = setInterval(updateTimer, 1000);
 });

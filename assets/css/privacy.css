@@ -1,0 +1,32 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #343a40; /* Cinza escuro */
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+h2 {
+    color: #d32f2f; /* Tom de vermelho harmonioso */
+    margin-top: 20px;
+}
+
+main {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+}
+
+footer {
+    background-color: #343a40;
+    color: #fff;
+    padding: 15px;
+    font-size: 0.9rem;
+    text-align: center;
+}
