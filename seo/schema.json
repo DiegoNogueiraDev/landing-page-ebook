@@ -1,0 +1,35 @@
+{
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": "E-book de Receitas Natalinas",
+    "image": "https://seusite.com/assets/images/receitas-rapidas.png",
+    "description": "Receitas rápidas, práticas e saudáveis para o Natal. Garanta agora seu e-book exclusivo com consultoria gratuita da Dra. Beatriz Neves Bruniera!",
+    "brand": {
+      "@type": "Brand",
+      "name": "Dra. Beatriz Neves Bruniera"
+    },
+    "offers": {
+      "@type": "Offer",
+      "priceCurrency": "BRL",
+      "price": "9.90",
+      "itemCondition": "https://schema.org/NewCondition",
+      "availability": "https://schema.org/InStock",
+      "seller": {
+        "@type": "Organization",
+        "name": "Receitas Natalinas"
+      },
+      "url": "https://checkout-link.com"
+    },
+    "author": {
+      "@type": "Person",
+      "name": "Dra. Beatriz Neves Bruniera",
+      "email": "beatriz.bruniera@gmail.com",
+      "affiliation": "Universidade Estadual de Londrina"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Receitas Natalinas",
+      "url": "https://seusite.com"
+    }
+  }
+  
