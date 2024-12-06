@@ -2,7 +2,7 @@
     "@context": "https://schema.org",
     "@type": "Product",
     "name": "E-book de Receitas Natalinas",
-    "image": "https://seusite.com/assets/images/receitas-rapidas.png",
+    "image": "https://www.beatrizbruniera.com.br/assets/images/receitas-rapidas.png",
     "description": "Receitas rápidas, práticas e saudáveis para o Natal. Garanta agora seu e-book exclusivo com consultoria gratuita da Dra. Beatriz Neves Bruniera!",
     "brand": {
       "@type": "Brand",
@@ -18,7 +18,7 @@
         "@type": "Organization",
         "name": "Receitas Natalinas"
       },
-      "url": "https://checkout-link.com"
+      "url": "https://chk.eduzz.com/8WPDG27NWP"
     },
     "author": {
       "@type": "Person",
@@ -29,7 +29,7 @@
     "publisher": {
       "@type": "Organization",
       "name": "Receitas Natalinas",
-      "url": "https://seusite.com"
+      "url": "https://www.beatrizbruniera.com.br"
     }
   }
   
