@@ -463,3 +463,13 @@ footer {
     border-radius: 0 0 10px 10px; /* Borda arredondada na parte inferior */
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Sombra leve */
 }
+.social-share a {
+    font-size: 0.9rem;
+    padding: 10px 15px;
+    color: #fff;
+    text-decoration: none;
+    margin: 5px;
+}
+.social-share a:hover {
+    opacity: 0.8;
+}

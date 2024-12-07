@@ -43,3 +43,13 @@ document.addEventListener('DOMContentLoaded', function () {
     updateTimer();
     const timerInterval = setInterval(updateTimer, 1000);
 });
+
+let exitIntentShown = false;
+
+document.addEventListener("mouseleave", (event) => {
+  if (event.clientY < 0 && !exitIntentShown) {
+    const modal = new bootstrap.Modal(document.getElementById("exitIntentModal"));
+    modal.show();
+    exitIntentShown = true;
+  }
+});
